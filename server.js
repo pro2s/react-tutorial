@@ -72,6 +72,6 @@ app.post('/api/comments', function(req, res) {
 });
 
 
-app.listen(app.get('port'), function() {
-  console.log('Server started: http://localhost:' + app.get('port') + '/');
+app.listen(app.get('port'), '0.0.0.0', function() {
+  console.log('Server started: http://0.0.0.0:' + app.get('port') + '/');
 });
